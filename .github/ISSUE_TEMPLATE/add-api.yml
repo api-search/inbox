@@ -1,0 +1,19 @@
+name: Add an API
+description: Get an API listed on APIs.io.
+title: "[add] "
+labels: ["request:add"]
+body:
+  - type: markdown
+    attributes:
+      value: The [add form](https://apis.io/add/) is faster — it discovers your artifacts automatically.
+  - type: input
+    id: url
+    attributes:
+      label: API or documentation URL
+    validations:
+      required: true
+  - type: textarea
+    id: artifacts
+    attributes:
+      label: Machine-readable artifacts
+      description: OpenAPI, AsyncAPI, llms.txt, apis.json, MCP endpoint — whatever you publish.

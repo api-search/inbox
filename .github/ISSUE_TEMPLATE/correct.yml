@@ -1,0 +1,19 @@
+name: Correct a profile
+description: Something on your APIs.io profile is wrong.
+title: "[correct] "
+labels: ["request:correct"]
+body:
+  - type: input
+    id: provider
+    attributes:
+      label: Profile URL
+      placeholder: https://apis.io/providers/acme/
+    validations:
+      required: true
+  - type: textarea
+    id: wrong
+    attributes:
+      label: What is wrong, and what is correct
+      description: Where we can verify the correct value is the most useful thing you can give us.
+    validations:
+      required: true

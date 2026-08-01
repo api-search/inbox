@@ -1,0 +1,17 @@
+name: Delist
+description: Ask to be removed from the APIs.io catalog.
+title: "[delist] "
+labels: ["request:delist"]
+body:
+  - type: input
+    id: provider
+    attributes:
+      label: Profile URL
+      placeholder: https://apis.io/providers/acme/
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: Anything we should know
+      description: Optional. We honor removal requests either way.

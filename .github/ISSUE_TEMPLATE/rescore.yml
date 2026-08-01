@@ -1,0 +1,30 @@
+name: Rescore or reindex
+description: You published something new and want the score refreshed.
+title: "[rescore] "
+labels: ["request:rescore"]
+body:
+  - type: input
+    id: provider
+    attributes:
+      label: Provider
+      description: Your APIs.io profile URL, or the company name if you are not sure.
+      placeholder: https://apis.io/providers/acme/
+    validations:
+      required: true
+  - type: textarea
+    id: artifacts
+    attributes:
+      label: What changed
+      description: >
+        URLs to the artifacts you want us to read — OpenAPI, AsyncAPI, llms.txt,
+        apis.json, MCP endpoint, docs. These are what the score is derived from.
+      placeholder: |
+        https://acme.com/openapi.yaml
+        https://acme.com/llms.txt
+    validations:
+      required: true
+  - type: textarea
+    id: expectation
+    attributes:
+      label: What you expect to change
+      description: Optional. Which part of the score you think is wrong, and why.

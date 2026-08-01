@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Add an API with the form
+    url: https://apis.io/add/
+    about: Faster than an issue — paste a URL and we discover the rest.
+  - name: Your provider repo
+    url: https://github.com/orgs/api-evangelist/repositories
+    about: Already listed? Anything specific to your profile belongs on your own repo.
